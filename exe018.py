@@ -4,10 +4,10 @@ import math
 
 angulo = int(input('Digite um ângulo: '))
 
-seno = math.sin(angulo)
+seno = math.sin(math.radians(angulo))
 
-cosseno = math.cos(angulo)
+cosseno = math.cos(math.radians(angulo))
 
-tangente = math.tan(angulo)
+tangente = math.tan(math.radians(angulo))
 
 print('Para o angulo {}°, temos os seguintes resultados: cosseno={:.3f}, seno={:.3f}, tangente={:.3f}.'.format(angulo, cosseno, seno, tangente))

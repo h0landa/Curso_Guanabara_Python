@@ -3,9 +3,9 @@ calcule e mostre o comprimento da hipotenusa.'''
 
 import math
 
-co = int(input('Digite o cateto oposto: '))
+co = float(input('Digite o cateto oposto: '))
 
-ca = int(input('Digite o cateto adjascente: '))
+ca = float(input('Digite o cateto adjascente: '))
 
 quadrado_dos_cateos = math.pow(co,2) + math.pow(ca,2)
 

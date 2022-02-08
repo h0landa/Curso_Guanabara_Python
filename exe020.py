@@ -1,6 +1,6 @@
 #Ler nome de 4 alunos e mostrar na tela em ordem sorteada.
 
-import random
+from random import shuffle
 
 name1 = input('Digite um nome: ')
 
@@ -12,6 +12,6 @@ name4 = input('Digite um nome: ')
 
 lista_nomes = [name1,name2, name3, name4]
 
-sorteado = random.choices(lista_nomes,k=4)
+sorteado = shuffle(lista_nomes)
 
-print('O aluno sorteado foi: {}'.format(sorteado))
+print('O aluno sorteado foi: {}'.format(lista_nomes))
