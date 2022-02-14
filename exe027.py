@@ -10,6 +10,5 @@ quantidade_palavras = len(nome)
 
 ultimo_nome = nome[quantidade_palavras -1]
 
-
 print('Primeiro nome: ',primeiro_nome)
 print('Ultimo nome: ',ultimo_nome)
