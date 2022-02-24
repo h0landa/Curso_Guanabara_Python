@@ -1,9 +1,5 @@
-from numpy import intp
-
-
 n1 = int(input('Digite o primeiro valor: '))
 n2 = int(input('Digite o segundo valor: '))
-
 if n1 > n2:
     print('O primeiro valor é maior que o segundo.')
 elif n2 > n1:

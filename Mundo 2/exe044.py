@@ -1,4 +1,4 @@
-preço = float(input('Digite o preço do produto: '))
+preço = float(input('Digite o preço do produto: R$ '))
 
 print('''Escolha como que pagar pelo produto:
 1 - Á vista: 10% de desconto
@@ -8,11 +8,17 @@ print('''Escolha como que pagar pelo produto:
 escolha = int(input('Digite sua escolha: '))
 
 if escolha == 1:
-    print('Seu produto á vista fica:R${:.2f}'.format(preço - (preço * 10/100)))
+    total = preço - (preço * 10/100)
 elif escolha == 2:
-    print('Seu produto á vista no cartão fica:R${:.2f}'.format(preço - (preço * 5/100)))
+    total = preço - (preço * 5/100)
 elif escolha == 3:
-    print('Seu produto parcelado em até 2x fica:R${:.2f}'.format(preço))
+    total = preço
+    print('Sua compra ficou com duas parcelas de R${:.2f}'.format(preço/2))     
+elif escolha == 4:
+    total = preço + (preço * 20/100)
+    quantparcelas = int(input('Você quer parcelar em quantas vezes ?: '))
+    print('Sua compra ficará com {} parcelas de R${:.2f}'.format(quantparcelas, total/quantparcelas))
 else:
-    print('Se o produto for parcelo em 3x ele fica por:R${:.2f}'.format(preço + (preço * 20/100)))
+    print('Opção de escolha inexistente, tente outra vez.')
+print('Sua compra de R${:.2f} ficou com o valor total de R${:.2f}'.format(preço, total))
 print('Tenha um bom dia!')
