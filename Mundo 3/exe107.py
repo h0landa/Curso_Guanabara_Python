@@ -1,4 +1,4 @@
-from ex107 import moeda
+from ex107.utilidadesCeV import moeda
 
 
 valor = float(input('Digite um valor: '))
